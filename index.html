@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script scr="https://ajax.googlealis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link href="https://cdn.jsdeliver.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event){
+                if(this.hash !== "") {
+                    event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        
+    </script>
+
+</head>
+<body>
+    <header>
+        <a href="logo" class="logo">About<span>Me</span></a>
+        <nav>
+           <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#information">INFORMATION</a></li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li><a href="#experience">EXPERIENCE</a></li>
+              <li><a href="#gallery">GALLERY</a></li>
+           </ul>
+      </nav>
+    </header>
+
+
+    <div class="banner" id="home">
+        <section class="home">
+            <div class="content">
+                <h1 class="heading1">Hi!</h1>
+                <h1 class="im"> I'm Bernadeth Alifonso</h1>
+                <h1 class="from"> Im an Independent Woman.</h1>
+                <a href="Readmore" class="btn">Readmore</a>
+                
+            
+            
+        </section>
+    </div>
+    
+    <!--this codes is for Information page-->
+
+    <div class="wrapper" id="information">
+        <div class="section-content"></div>
+
+       <div class="background-color">
+          <div class="bg-1"></div>
+          <div class="bg-2"></div>
+
+        </div>
+
+        <div class="information-container">
+            <div class="image-container">
+                <img src="img/bh.jpg" alt="">
+            </div>
+
+            <div class="text-container">
+                <h1> All About Me</h1>
+                <p> 
+                    Name: Bernadeth Alifonso N.<br>
+
+                    Age: 21 yrs old<br>
+
+                    Year: 3rd year college<br>
+
+                    Address: 306 Maquiling st. Pavia, iloilo city
+                    <br>
+                </p>
+            </div>
+
+        </div>
+       </div>
+
+    </div>
+
+    <div class="section" id="skills">
+        <div class="title">
+            <h1>MY SKILLS</h1>
+        </div>
+        <div class="skills">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-calendar"></i>
+                        
+                    </div>
+                    <h2>PATIENCE</h2>
+                        <p> I have a lot of patience with everything.</p>
+
+                </div>
+
+              
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-calendar"></i>
+                    
+                </div>
+                <h2>TIME MANAGEMENT</h2>
+                    <p> Manage time effectively by planning
+                         and controlling
+                        unimportant matters.
+                    </p>
+
+            </div>
+
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-calendar"></i>
+                    
+                </div>
+                <h2>FRIENDLY</h2>
+                    <p> I'm easy to make friends with and can be trusted with secrets.</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="wrapper" id="experience">
+        <div class="section-content"></div>
+
+       <div class="background-color">
+          <div class="bg-1"></div>
+          <div class="bg-2"></div>
+
+        </div>
+
+        <div class="information-container">
+            <div class="image-container">
+                <img src="img/to.jpg" alt="">
+            </div>
+
+            <div class="text-container">
+                <h1> My Experience</h1>
+                <p> I was a working student for three years.
+                    I took care of twins, and during those three years
+                    it was difficult because I had to balance my studies and work.
+                    But thankfully, with God's mercy, He never left me alone in facing
+                    the challenges that come into my life.
+                    
+                    
+                
+                </p>
+            </div>
+
+        </div>
+       </div>
+
+    </div>
+
+
+    <div class="gallery" id="gallery">
+
+        <input type="radio" name="photos" id="check1" checked>
+        <input type="radio" name="photos" id="check2">
+        <input type="radio" name="photos" id="check3">
+        <input type="radio" name="photos" id="check4">
+    
+        <div class="gallery-container">
+            <h1> MY GALLERY</h1>
+            <div class="top-content">
+                <h3>Photo Gallery</h3>
+    
+                <label for="check2"> Friends</label>
+                <label for="check3"> Brother</label>
+                <label for="check4"> Cutiee</label>
+            </div>
+    
+            <div class="photo-gallery"> 
+    
+           <div class="pic friends">
+            <img src="img/f1.jpg">
+           </div>
+    
+            <div class="pic Brother">
+                <img src="img/b1.jpg">
+            </div>
+    
+            <div class="pic cutie">
+                <img src="img/c1.jpg">
+            </div>
+    
+            <div class="pic friends">
+                <img src="img/f2.jpg">
+            </div>
+    
+            <div class="pic Brother">
+                <img src="img/b2.jpg">
+            </div>
+    
+            <div class="pic cutie">
+                <img src="img/c2.jpg">
+            </div>
+    
+            <div class="pic friends">
+                <img src="img/f3.jpg">
+            </div>
+    
+            <div class="pic Brother">
+                <img src="img/b3.jpg">
+            </div>
+    
+            <div class="pic cutie">
+                <img src="img/c3.jpg">
+            </div>
+    
+            <div class="pic friends">
+                <img src="img/f4.jpg">
+            </div>
+    
+            <div class="pic Brother">
+                <img src="img/b4.jpg">
+            </div>
+    
+            <div class="pic cutie">
+                <img src="img/c4.jpg">
+            </div>
+    
+         </div>
+    
+      </div>
+        
+    </div>
+    
+    
+    
+    <!--footer-->
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <p class="copyright">Created by Alifonso @2023</p>
+        </footer>
+    </div>
+    <a href="#home" id="myBtn" title="Go to Top">TOP</a>
+    
+    <Script>  let mybutton=document.getElementById("myBtn");
+    //When the user scrolls down 20px from the top of the document,show the button
+    window.onscroll=function()
+    {scrollFunction()};
+    function scrollFunction(){
+        if (document.body.scrollTop>20 ||document.documentElement.scrollTop>20){
+            mybutton.style.display="block";
+    
+        }else{
+            mybutton.style.display="none";
+        }
+    }
+    
+    </Script>
+    
+    
+    
+    
+    </body>
+    </html>
